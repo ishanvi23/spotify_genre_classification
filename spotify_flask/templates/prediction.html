@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html  data-theme="forest">
+<head>
+  <title>Song Genre Prediction</title>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.6/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="static/styles.css">
+<link rel="shortcut icon" href="static/spotify.png" class="logofav" type="image/x-icon">
+
+</head>
+<body>
+    <div class="navbar bg-primary text-primary-content">
+        <img src="static/spotify.png" class="logo" alt="">
+        <a class="btn btn-ghost normal-case text-xl">Spotify Genre Prediction</a>
+      </div>
+  <form id="genre-form" class = "form-class" method="POST">
+    <div class="container">
+        <label class="labels" for="danceability">Danceability:</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" step="0.01" id="danceability" name="danceability"><br>
+
+    </div>
+    <div class="container">
+        <label class="labels" for="energy">Energy:</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" step="0.01" id="energy" name="energy"><br>
+
+    </div>
+    <div class="container">
+        <label class="labels" for="key">Key:</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" id="key" name="key"><br>
+
+    </div>
+    <div class="container">
+        <label class="labels" for="loudness">Loudness:</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" step="0.01" id="loudness" name="loudness"><br>
+
+    </div>
+    <div class="container">
+        <label class="labels" for="mode">Mode:</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" id="mode" name="mode"><br>
+
+    </div>
+    <div class="container">
+        <label class="labels" for="speechiness">Speechiness:</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" step="0.01" id="speechiness" name="speechiness"><br>
+
+    </div>
+    <div class="container">
+        <label class="labels" for="acousticness">Acousticness:</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" step="0.01" id="acousticness" name="acousticness"><br>
+
+    </div>
+    <div class="container">
+        <label class="labels" for="instrumentalness">Instrumentalness:</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" step="0.01" id="instrumentalness" name="instrumentalness"><br>
+
+    </div>
+    <div class="container">
+        <label class="labels" for="liveness">Liveness:</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" step="0.01" id="liveness" name="liveness"><br>
+
+    </div>
+    <div class="container">
+        <label class="labels" for="valence">Valence:</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" step="0.01" id="valence" name="valence"><br>
+
+    </div>
+    <div class="container">
+        <label class="labels" for="tempo">Tempo:</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" step="0.01" id="tempo" name="tempo"><br>
+
+    </div>
+    <div class="container">
+        <label class="labels" for="duration_ms">Duration (in ms):</label>
+    <input class="input input-bordered input-primary w-full max-w-xs" type="number" id="duration_ms" name="duration_ms"><br>
+
+    </div>
+    <input type="submit" class="btn  btn-active buttonClass btn-primary" value="Predict Genre">
+  </form>
+</body>
+</html>
